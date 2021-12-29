@@ -1,10 +1,11 @@
-fetch('https://data.cdc.gov/resource/w9j2-ggv5.csv')
+//fetch('data/out.csv')
+FileReader.readAsDataURL('data/out.csv')
    .then(function (response) {
       return response.text();
    })
    .then(function (text) {
      let series = csvToSeries(text);
-   	 renderChart(series);
+   	 //renderChart(series);
    })
    .catch(function (error) {
       //Something went wrong

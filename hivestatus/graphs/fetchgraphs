@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ${BEETEMPSDIR}
-git checkout livedata
+git checkout public
 
 USTAMP=`date +%s`
 USTAMP=$(( USTAMP*1000 ))
@@ -57,4 +57,4 @@ curl -H "Authorization: Bearer ${BEETOKEN}"  \
 "http://localhost:3000/render/d-solo/wVh0pof7z/bees?orgId=2&refresh=1m&from=${START}&to=${USTAMP}&panelId=2&width=1600&height=600&tz=America%2FVancouver" > Beehive_I_4w.png
 
 thistime=`date`
-git commit -a "Adding data for ${thistime}"
+git commit -a -m "Adding data for ${thistime}"

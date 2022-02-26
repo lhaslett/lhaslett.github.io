@@ -37,7 +37,7 @@ img {
   flex-wrap: wrap;
   position: relative;
   list-style: none;
-  background-color: #fff;
+  background-color: #000;
   margin: 40px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -105,13 +105,13 @@ img {
   border-bottom-left-radius: 0;
 }
 .tab:checked + label {
-  background-color: #fff;
+  background-color: #302;
   box-shadow: 0 -1px 0 #fff inset;
   cursor: default;
 }
 .tab:checked + label:hover {
   box-shadow: 0 -1px 0 #fff inset;
-  background-color: #fff;
+  background-color: #403;
 }
 .tab + label {
   box-shadow: 0 -1px 0 #eee inset;
@@ -119,10 +119,10 @@ img {
   cursor: pointer;
   display: block;
   text-decoration: none;
-  color: #333;
+  color: #eee;
   flex-grow: 3;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #000;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -134,7 +134,7 @@ img {
   padding: 15px;
 }
 .tab + label:hover {
-  background-color: #f9f9f9;
+  background-color: #605;
   box-shadow: 0 1px 0 #f4f4f4 inset;
 }
 .tab__content {
@@ -152,8 +152,8 @@ img {
 /* boring stuff */
 body {
   font-family: "Helvetica", sans-serif;
-  background-color: #e7e7e7;
-  color: #777;
+  background-color: #000;
+  color: #ccc;
   padding: 30px 0;
   font-weight: 300;
 }
@@ -170,7 +170,7 @@ body {
 h1,
 h2 {
   margin: 0;
-  color: #444;
+  color: #ccc;
   text-align: center;
   font-weight: 400;
 }
@@ -211,9 +211,9 @@ p {
 
 <div class="container">
 
-  <div class="demo-section">
+  <!-- <div class="demo-section">
     <p>Cool stuff.</p>
-  </div>
+  </div> -->
 
   <div class="tab-wrap">
 
@@ -225,42 +225,75 @@ p {
     <label for="tab2">Last 2 days</label>
 
     <input type="radio" id="tab3" name="tabGroup1" class="tab">
-    <label for="tab3">Last week</label>
+    <label for="tab3">Last 4 weeks</label>
 
     <!-- <input type="radio" id="tab4" name="tabGroup1" class="tab">
     <label for="tab4">Last month</label> -->
 
     <div class="tab__content">
-      <h3>Short Section</h3>
-      <p>Praesent nonummy mi in odio. Nulla
-         accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      <h3>Temperature in °C</h3>
+      <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
          <div><img src="graphs/Beehive_24.png"
             style="width:auto"></div>
+
+      <h3>Humidity %</h3>
+            <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
+               <div><img src="graphs/Beehive_H_24.png"
+               style="width:auto"></div>
+               <h3>Temperature in °C</h3>
+
+               <h3>Internal conditions (top board)</h3>
+               <p>Compares the relationship between temperature at the top board with humidity.</p>
+               <div><img src="graphs/Beehive_I_24.png"
+               style="width:auto"></div>
+
+
+
+
+
     </div>
 
     <div class="tab__content">
-      <h3>Medium Section</h3>
-      <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
+      <h3>Temperature in °C</h3>
+      <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
       <div><img src="graphs/Beehive_7d.png"
+      style="width:auto"></div>
+
+<h3>Humidity %</h3>
+         <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
+         <div><img src="graphs/Beehive_H_7d.png"
          style="width:auto"></div>
+
+         <h3>Internal conditions (top board)</h3>
+         <p>Compares the relationship between temperature at the top board with humidity.</p>
+         <div><img src="graphs/Beehive_I_7d.png"
+         style="width:auto"></div>
+
     </div>
 
     <div class="tab__content">
-      <h3>Long Section</h3>
-      <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+      <h3>Temperature in °C</h3>
+      <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
       <div><img src="graphs/Beehive_4w.png"
-         style="width:auto"></div>
-    </div>
+      style="width:auto"></div>
 
-    <div class="tab__content">
-      <h3>Last month</h3>
-      <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+         <h3>Humidity %</h3>
+         <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
+         <div><img src="graphs/Beehive_H_4w.png"
+         style="width:auto"></div>
+
+        <h3>Internal conditions (top board)</h3>
+        <p>Compares the relationship between temperature at the top board with humidity.</p>
+        <div><img src="graphs/Beehive_I_4w.png"
+        style="width:auto"></div>
     </div>
 
   </div>
 
-  <div class="demo-section">
+  <!-- <div class="demo-section">
     <p>Some really cool historical stuff.</p>
   </div>
 
@@ -314,7 +347,7 @@ p {
     <p>Etiam ut purus enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
 
     <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-  </div>
+  </div> -->
 
 </div>
 

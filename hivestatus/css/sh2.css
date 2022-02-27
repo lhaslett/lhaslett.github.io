@@ -124,3 +124,19 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+/* unvisited link */
+a:link {
+  color: #66b;
+}
+/* visited link */
+a:visited {
+  color: #55b;
+}
+/* mouse over link */
+a:hover {
+  color: #a0e;
+}
+/* selected link */
+a:active {
+  color: #aa00bb;
+}

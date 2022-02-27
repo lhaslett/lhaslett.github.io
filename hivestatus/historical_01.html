@@ -212,83 +212,86 @@ p {
 <div class="container">
 
   <div class="demo-section">
-  <p>Each tab has three graphs. Scroll down to see them all. <br/>See the <a href="./historical_01.html">historical graphs</a> for interesting events in the recent past.</p>
+  <p>See the <a href="./index.html">main page</a> for current conditions in the hive.</p>
   </div>
 
   <div class="tab-wrap">
 
     <!-- active tab on page load gets checked attribute -->
     <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-    <label for="tab1">Last 24 hours</label>
+    <label for="tab1">Dec 2021 Cold snap</label>
 
     <input type="radio" id="tab2" name="tabGroup1" class="tab">
-    <label for="tab2">Last 7 days</label>
+    <label for="tab2">Dec 2021 to mid-Jan 2022</label>
 
     <input type="radio" id="tab3" name="tabGroup1" class="tab">
-    <label for="tab3">Last 4 weeks</label>
+    <label for="tab3">Dec 2021 to end of Feb 2022</label>
+
+    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+    <label for="tab4">2022 - first warm days</label>
 
     <!-- <input type="radio" id="tab4" name="tabGroup1" class="tab">
     <label for="tab4">Last month</label> -->
 
     <div class="tab__content">
-      <h3>Temperature in °C</h3>
-      <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
-         <div><img src="graphs/Beehive_24.png"
+      <h3>Humidity and temperature inside the hive during the cold snap of December, 2021.</h3>
+      <p>The measurements are taken at the top board, not inside the hive. The outside temperature went below -12 °C on one night, and usually around -7 °C
+      the other nights. How and what did the bees do?</p>
+      <p>We would expect they would cluster inside, and that looks like what happened. The humidity being exhausted from the hive dropped very low as the
+        temperatures dipped.</p>
+      <p><i>Note the red circles below:</i><br/>These show where, periodically, the humidity would spike above 90% for just a few moments, and at
+        the exact same time, the temperature spiked. I interpret that
+        mean the bees on the outside of the cluster exhanged with warm bees from the inside. This took about 15 minutes, during which moisture and heating
+        escaped as the bees unlocked from each other.
+      <div><img src="graphs/hist01.png"
             style="width:auto"></div>
 
-      <h3>Humidity %</h3>
-            <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
-               <div><img src="graphs/Beehive_H_24.png"
-               style="width:auto"></div>
-               <h3>Temperature in °C</h3>
 
-               <h3>Internal conditions (top board)</h3>
-               <p>Compares the relationship between temperature at the top board with humidity.</p>
-               <div><img src="graphs/Beehive_I_24.png"
-               style="width:auto"></div>
+    <h2>Temperatures inside and outside the hive for the same period.</h2>
+    <div><img src="graphs/hist01b.png"
+          style="width:auto"></div>
 
+    </div>
+    <div class="tab__content">
 
+      <h3>Mid-January warming</h3>
+      <p>Note how the internal hive humidity varies continuously through the cold part of January. But as it warms in the second week,
+      the humidity suddenly shoots up to 100% (at the top board). Looks like the bees are no longer needing to cluster! Instead,
+    they're active and are expelling a lot of moisture out the top. 🙂</p>
+      <div><img src="graphs/hist02.png"
+      style="width:auto"></div>
 
+    </div>
+
+    <div class="tab__content">
+
+      <h3>Overview: from the Dec '21 cold snap to the end of February.</h3>
+      <p>For the most part, it looks like they're pretty active. We have a few cool nights where it
+      looks like they clustered a bit, but overall, they're staying active.  The red box shows the first days
+    where we noticed large numbers out flying. More details in the next tab.</p>
+    <p>We also noticed that the interal hive temperature has been affected less and less by cold temperatures. This suggests
+      a rapidly growing population, just what we'd hope for at this time of the year.  More bees=more ability to thermally regulate the hive.
+      <div><img src="graphs/hist03.png"
+      style="width:auto"></div>
 
 
     </div>
 
     <div class="tab__content">
 
+      <h3>First warm days in February, 2022</h3>
+      <p>The red boxes show three sunny days we had, and the time where we observed lots of bees out and about, bringing back pollen and such.
+      Note that the internal temperature really spikes, and the humidity is all over the place. This is probably because lots of bee activity
+    and traffic. It doesn't look like any pattern seen during the cold weather.</p>
+    <p> On the rainy day, the pattern continued.  It was still quite warm, so they probably weren't clustering, but they were obviously up to
+      something. After that, the humidity has gone to 100%, except for some brief drops during our recent week of cold temperatures.</p>
+      <div><img src="graphs/hist04a.png"
+      style="width:auto"></div>
       <h3>Temperature in °C</h3>
       <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
-      <div><img src="graphs/Beehive_7d.png"
+      <div><img src="graphs/hist04b.png"
       style="width:auto"></div>
 
-<h3>Humidity %</h3>
-         <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
-         <div><img src="graphs/Beehive_H_7d.png"
-         style="width:auto"></div>
-
-         <h3>Internal conditions (top board)</h3>
-         <p>Compares the relationship between temperature at the top board with humidity.</p>
-         <div><img src="graphs/Beehive_I_7d.png"
-         style="width:auto"></div>
-
-    </div>
-
-    <div class="tab__content">
-
-      <h3>Temperature in °C</h3>
-      <p>Compares the temperature at the top board with the temperature in the back yard, outside the hive.</p>
-      <div><img src="graphs/Beehive_4w.png"
-      style="width:auto"></div>
-
-
-         <h3>Humidity %</h3>
-         <p>Compares the humidity at the top board with the humidity in the back yard, outside the hive.</p>
-         <div><img src="graphs/Beehive_H_4w.png"
-         style="width:auto"></div>
-
-        <h3>Internal conditions (top board)</h3>
-        <p>Compares the relationship between temperature at the top board with humidity.</p>
-        <div><img src="graphs/Beehive_I_4w.png"
-        style="width:auto"></div>
     </div>
 
   </div>
